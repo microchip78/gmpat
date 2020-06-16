@@ -1,0 +1,18 @@
+:host {
+  select {
+    width: 250px;
+    padding: 4px;
+  }
+
+  input {
+    width: 250px;
+    padding: 0 4px;
+  }
+
+  .error {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    color: red;
+  }
+}

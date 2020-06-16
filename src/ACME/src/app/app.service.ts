@@ -1,24 +1,34 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
+import { catchError, retry, map } from 'rxjs/operators';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AppService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private httpClient: HttpClient) { }
-
-  getCountriesUrl = 'http://localhost:5000/api/countries/names';
-
-  getCountries() {
-    return this.httpClient.get(this.getCountriesUrl);
+  getCountryNames(): Observable<string[]> {
+    return this.http.get<string[]>('/api/countries/names');
   }
 
-  getStatesUrl = 'http://localhost:5000/api/states';
+  getStates(): Observable<string[]> {
+    return this.http.get<string[]>('/api/states');
+  }
 
-  getStates() {
-    return this.httpClient.get(this.getStatesUrl);
+  getValidatePostcode(state: string, postcode: string): Observable<boolean> {
+    return this.http
+      .get<string[]>(`/api/Postcodes/${state}`)
+      .pipe(map((result) => result.indexOf(postcode) >= 0));
+  }
+
+  postApplicationForm(form: any): Observable<number> {
+    const body = {
+      CountryName: form.country,
+      FullName: form.fullname,
+      Postcode: form.postcode,
+    };
+    return this.http.post<number>('/api/Submit/application', body);
   }
 }
