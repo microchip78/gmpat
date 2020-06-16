@@ -17,7 +17,7 @@ export class AppService {
     return this.http.get<string[]>('/api/states');
   }
 
-  getValidatePostcode(state: string, postcode: string): Observable<boolean> {
+  validatePostcode(state: string, postcode: string): Observable<boolean> {
     return this.http
       .get<string[]>(`/api/Postcodes/${state}`)
       .pipe(map((result) => result.indexOf(postcode) >= 0));

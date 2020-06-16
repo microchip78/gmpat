@@ -9,6 +9,22 @@
     padding: 0 4px;
   }
 
+  h4 {
+    margin: 0;
+  }
+
+  .form {
+    margin-top: 30px;
+  }
+
+  .title {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 0 30px;
+    background-color: #dedede;
+  }
+
   .error {
     display: flex;
     align-items: center;

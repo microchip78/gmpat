@@ -1,0 +1,108 @@
+<div class="title">
+  <div class="container">
+    <h4>ACME Offer - New Application</h4>
+  </div>
+</div>
+
+<div class="container form">
+  <ng-container *ngIf="!submitted">
+    <form [formGroup]="form" (submit)="submit()">
+      <label class="row">
+        <div class="col-3">
+          Country of residnece*:
+        </div>
+        <div class="col-3">
+          <select formControlName="country">
+            <option value="" selected>Please Select</option>
+            <option
+              *ngFor="let country of countries$ | async"
+              [value]="country"
+              >{{ country }}</option
+            >
+          </select>
+        </div>
+        <div
+          class="col-6 error"
+          *ngIf="form.get('country').errors && form.get('country').dirty"
+        >
+          Country of residency required
+        </div>
+      </label>
+      <label class="row" [hidden]="form.get('country').value !== 'Australia'">
+        <div class="col-3">State*:</div>
+        <div class="col-3">
+          <select formControlName="state">
+            <option value="" selected>Please select</option>
+            <option *ngFor="let state of states$ | async" [value]="state">{{
+              state
+            }}</option>
+          </select>
+        </div>
+        <div
+          class="col-6 error"
+          *ngIf="form.get('state').errors && form.get('state').dirty"
+        >
+          State you reside in is required
+        </div>
+      </label>
+      <label class="row" [hidden]="form.get('country').value !== 'Australia'">
+        <div class="col-3">
+          Postcode*:
+        </div>
+        <div class="col-3">
+          <input
+            type="text"
+            formControlName="postcode"
+            (keypress)="numericKeysOnly($event)"
+          />
+        </div>
+        <div
+          class="col-6 error"
+          *ngIf="form.get('postcode').dirty || form.get('postcode').touched"
+        >
+          <span *ngIf="form.get('postcode').hasError('required')">
+            Postcode is required
+          </span>
+          <span *ngIf="form.get('postcode').hasError('invalid')">
+            {{ form.get("postcode").errors["invalid"] }}
+          </span>
+          <span
+            *ngIf="
+              form.get('postcode').hasError('maxlength') ||
+              form.get('postcode').hasError('minlength')
+            "
+          >
+            Postcode must be 4 digits only
+          </span>
+        </div>
+      </label>
+      <label class="row">
+        <div class="col-3">
+          Full Name*:
+        </div>
+        <div class="col-3">
+          <input type="text" formControlName="fullname" />
+        </div>
+        <div
+          class="col-6 error"
+          *ngIf="form.get('fullname').dirty || form.get('fullname').touched"
+        >
+          <span *ngIf="form.get('fullname').hasError('required')">
+            Fullname is required
+          </span>
+          <span *ngIf="form.get('fullname').hasError('maxlength')">
+            Fullname must be less than 120 charracters long
+          </span>
+        </div>
+      </label>
+      <hr />
+      <button type="submit" [disabled]="!form.valid">Submit Application</button>
+    </form>
+  </ng-container>
+  <ng-container *ngIf="submitted">
+    <p>Your application has been successfully submitted</p>
+    <p>
+      Your application no is <b>{{ applicationNo }}</b>
+    </p>
+  </ng-container>
+</div>
