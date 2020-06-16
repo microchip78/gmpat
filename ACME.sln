@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACME.WebApi", "src\ACME.WebApi\ACME.WebApi.csproj", "{9954C148-2C27-4BB3-A6D7-CF6BEE7F9816}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACME.Core", "src\ACME.Core\ACME.Core.csproj", "{F6DB29D4-E0CC-49AF-8016-4A82A4D3B6EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACME.DataAccess", "src\ACME.DataAccess\ACME.DataAccess.csproj", "{F032C59B-825F-4A82-87C6-3F4B2F4AA0D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACME.Service", "src\ACME.Service\ACME.Service.csproj", "{EBA8AF47-530F-4F67-8AD2-14AE010149EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{34C45EBB-F0FF-4852-8C5A-64CA659ED1F3}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.git.rm.history.sh = .git.rm.history.sh
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "question", "question", "{E87427E9-CF05-426D-BF99-A3FAA08E3A02}"
+	ProjectSection(SolutionItems) = preProject
+		question\ACME Offer 2020 v1.01.zip = question\ACME Offer 2020 v1.01.zip
+		question\ACME Offer 2020 v1.01\ACME Offer Fields v6.pdf = question\ACME Offer 2020 v1.01\ACME Offer Fields v6.pdf
+		question\ACME Offer 2020 v1.01\ACME Offer Wireframes v6.pdf = question\ACME Offer 2020 v1.01\ACME Offer Wireframes v6.pdf
+		question\ACME Offer 2020 v1.01\DatabaseCountryData.csv = question\ACME Offer 2020 v1.01\DatabaseCountryData.csv
+		question\ACME Offer 2020 v1.01\DatabasePostcodeData.csv = question\ACME Offer 2020 v1.01\DatabasePostcodeData.csv
+		question\ACME Offer 2020 v1.01\DatabaseSchema.sql = question\ACME Offer 2020 v1.01\DatabaseSchema.sql
+		question\ACME Offer 2020 v1.01\Readme.docx = question\ACME Offer 2020 v1.01\Readme.docx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{3556F4C8-E9E8-45EB-AB2C-35C7AAC79DE4}"
+	ProjectSection(SolutionItems) = preProject
+		sql\ACME.sql = sql\ACME.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9954C148-2C27-4BB3-A6D7-CF6BEE7F9816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9954C148-2C27-4BB3-A6D7-CF6BEE7F9816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9954C148-2C27-4BB3-A6D7-CF6BEE7F9816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9954C148-2C27-4BB3-A6D7-CF6BEE7F9816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6DB29D4-E0CC-49AF-8016-4A82A4D3B6EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6DB29D4-E0CC-49AF-8016-4A82A4D3B6EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6DB29D4-E0CC-49AF-8016-4A82A4D3B6EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6DB29D4-E0CC-49AF-8016-4A82A4D3B6EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F032C59B-825F-4A82-87C6-3F4B2F4AA0D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F032C59B-825F-4A82-87C6-3F4B2F4AA0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F032C59B-825F-4A82-87C6-3F4B2F4AA0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F032C59B-825F-4A82-87C6-3F4B2F4AA0D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBA8AF47-530F-4F67-8AD2-14AE010149EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA8AF47-530F-4F67-8AD2-14AE010149EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA8AF47-530F-4F67-8AD2-14AE010149EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA8AF47-530F-4F67-8AD2-14AE010149EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E87427E9-CF05-426D-BF99-A3FAA08E3A02} = {34C45EBB-F0FF-4852-8C5A-64CA659ED1F3}
+		{3556F4C8-E9E8-45EB-AB2C-35C7AAC79DE4} = {34C45EBB-F0FF-4852-8C5A-64CA659ED1F3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BD766BF-7DD9-45FC-BC4F-0ED8A27F1E35}
+	EndGlobalSection
+EndGlobal

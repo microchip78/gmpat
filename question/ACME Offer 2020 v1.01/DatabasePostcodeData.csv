@@ -1,0 +1,11 @@
+ID,Pcode,Locality,State,Comments,DeliveryOffice,PreSortIndicator,ParcelZone,BSPnumber,BSPname,Category,
+50,822,ACACIA HILLS,NT,,,,,,,Delivery Area,"INSERT INTO Postcodes Values(50, 822, 'ACACIA HILLS', 'NT', '', '', '', '', '', '', 'Delivery Area');"
+3802,2601,ACTON,ACT,,,,,,,Delivery Area,"INSERT INTO Postcodes Values(3802, 2601, 'ACTON', 'ACT', '', '', '', '', '', '', 'Delivery Area');"
+5172,2850,AARONS PASS,NSW,,,,,,,Delivery Area,"INSERT INTO Postcodes Values(5172, 2850, 'AARONS PASS', 'NSW', '', '', '', '', '', '', 'Delivery Area');"
+7795,3737,ABBEYARD,VIC,,,,,,,Delivery Area,"INSERT INTO Postcodes Values(7795, 3737, 'ABBEYARD', 'VIC', '', '', '', '', '', '', 'Delivery Area');"
+10354,4613,ABBEYWOOD,QLD,,,,,,,Delivery Area,"INSERT INTO Postcodes Values(10354, 4613, 'ABBEYWOOD', 'QLD', '', '', '', '', '', '', 'Delivery Area');"
+12392,5159,ABERFOYLE PARK,SA,,,,,,,Delivery Area,"INSERT INTO Postcodes Values(12392, 5159, 'ABERFOYLE PARK', 'SA', '', '', '', '', '', '', 'Delivery Area');"
+14504,6280,ABBA RIVER,WA,,,,,,,Delivery Area,"INSERT INTO Postcodes Values(14504, 6280, 'ABBA RIVER', 'WA', '', '', '', '', '', '', 'Delivery Area');"
+16305,7306,ACACIA HILLS,TAS,,,,,,,Delivery Area,"INSERT INTO Postcodes Values(16305, 7306, 'ACACIA HILLS', 'TAS', '', '', '', '', '', '', 'Delivery Area');"
+16361,7315,ABBOTSHAM,TAS,,,,,,,Delivery Area,"INSERT INTO Postcodes Values(16361, 7315, 'ABBOTSHAM', 'TAS', '', '', '', '', '', '', 'Delivery Area');"
+16389,7320,ACTON,TAS,BURNIE,,,,,,Delivery Area,"INSERT INTO Postcodes Values(16389, 7320, 'ACTON', 'TAS', 'BURNIE', '', '', '', '', '', 'Delivery Area');"

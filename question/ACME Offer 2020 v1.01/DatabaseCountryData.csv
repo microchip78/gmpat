@@ -1,0 +1,11 @@
+CountryId,CountryName,CountryCode,
+1,Australia,AU,"INSERT INTO dbo.Country Values(1, 'Australia', 'AU');"
+2,New Zealand,NZ,"INSERT INTO dbo.Country Values(2, 'New Zealand', 'NZ');"
+3,Antarctica,AQ,"INSERT INTO dbo.Country Values(3, 'Antarctica', 'AQ');"
+4,Argentina,AR,"INSERT INTO dbo.Country Values(4, 'Argentina', 'AR');"
+5,Brazil,BR,"INSERT INTO dbo.Country Values(5, 'Brazil', 'BR');"
+6,Australia,AU,"INSERT INTO dbo.Country Values(6, 'Australia', 'AU');"
+7,New Zeland,NZ,"INSERT INTO dbo.Country Values(7, 'New Zeland', 'NZ');"
+8,Antarticia,AQ,"INSERT INTO dbo.Country Values(8, 'Antarticia', 'AQ');"
+9,Argentina,AR,"INSERT INTO dbo.Country Values(9, 'Argentina', 'AR');"
+10,Brazil,BR,"INSERT INTO dbo.Country Values(10, 'Brazil', 'BR');"

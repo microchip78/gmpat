@@ -1,0 +1,2 @@
+sqllocaldb stop
+sqllocaldb delete
